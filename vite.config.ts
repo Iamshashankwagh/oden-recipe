@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/oden-recipe/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
