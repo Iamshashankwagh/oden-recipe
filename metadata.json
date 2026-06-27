@@ -1,0 +1,6 @@
+{
+  "name": "Odin Recipes",
+  "description": "A beautifully styled collection of recipes including Classic Lasagna, Neapolitan Pizza, and Creamy Carbonara.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

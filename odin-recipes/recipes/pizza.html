@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neapolitan Pizza - Odin Recipes</title>
+  <!-- Google Fonts for gorgeous typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN for elegant modern visual presentation -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#FDFCF9] text-[#1A1A1A] font-serif min-h-screen py-10">
+  <main class="max-w-3xl mx-auto px-6 space-y-10">
+    
+    <!-- Home Link (Iteration 2 Requirement) -->
+    <div class="border-b border-[#D1CEC7] pb-4 flex justify-between items-baseline">
+      <a href="../index.html" class="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-sans font-bold border border-[#D1CEC7] px-4 py-2 bg-[#F7F5F0] hover:bg-[#1A1A1A] hover:text-[#FDFCF9] hover:border-transparent transition-all duration-300">
+        &larr; Home
+      </a>
+      <span class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D]">Issue No. 01</span>
+    </div>
+
+    <!-- Recipe Title (Iteration 2 Requirement) -->
+    <div class="space-y-2">
+      <span class="block text-xs font-sans font-bold text-[#8C887D] tracking-[0.3em] uppercase">Recipe No. 02</span>
+      <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight text-[#1A1A1A]">
+        Neapolitan Pizza
+      </h1>
+    </div>
+
+    <!-- Image of Finished Dish (Iteration 3 Requirement) -->
+    <div class="border border-[#D1CEC7] bg-[#E8E6E1] overflow-hidden aspect-[16/9]">
+      <img 
+        src="../../src/assets/images/neapolitan_pizza_1782546963975.jpg" 
+        alt="Neapolitan Pizza" 
+        referrerpolicy="no-referrer"
+        class="w-full h-full object-cover grayscale-[10%] contrast-[102%]"
+      >
+    </div>
+
+    <!-- Description (Iteration 3 Requirement) -->
+    <div class="space-y-4">
+      <h2 class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D] border-b border-[#D1CEC7] pb-2">Description</h2>
+      <p class="text-[#4A4741] text-lg font-serif italic leading-relaxed">
+        The absolute gold standard of Italian pizzas. A light, airy, and blistered wood-fired crust topped with vibrant, simple San Marzano tomato sauce, fresh pools of creamy buffalo mozzarella, green fragrant basil leaves, and a fine drizzle of extra virgin olive oil.
+      </p>
+      <p class="text-[#4A4741] text-lg font-serif italic leading-relaxed">
+        This authentic Italian recipe focuses on high quality, simple ingredients and proper dough fermentation to achieve an incredibly flavorful, soft crust that is characteristic of Naples.
+      </p>
+    </div>
+
+    <!-- Two Column layout for Ingredients and Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pt-4">
+      
+      <!-- Ingredients (Iteration 3 Requirement) -->
+      <div class="md:col-span-5 space-y-4">
+        <h2 class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D] border-b border-[#D1CEC7] pb-2">Ingredients</h2>
+        <ul class="space-y-3 text-sm font-sans font-medium text-[#1A1A1A]">
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Tipo "00" flour</span><span class="text-[#8C887D]">500g</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Water (room temp)</span><span class="text-[#8C887D]">325ml</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Fine sea salt</span><span class="text-[#8C887D]">10g</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Active dry yeast</span><span class="text-[#8C887D]">3g</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>San Marzano tomatoes</span><span class="text-[#8C887D]">14 oz</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Buffalo mozzarella</span><span class="text-[#8C887D]">12 oz</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Fresh basil leaves</span><span class="text-[#8C887D]">1 bunch</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Extra virgin olive oil</span><span class="text-[#8C887D]">2 tbsp</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Semolina flour</span><span class="text-[#8C887D]">For dust</span></li>
+        </ul>
+      </div>
+
+      <!-- Steps (Iteration 3 Requirement) -->
+      <div class="md:col-span-7 space-y-4">
+        <h2 class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D] border-b border-[#D1CEC7] pb-2">Steps</h2>
+        <ol class="space-y-6">
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">01.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Mix Dough</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Dissolve yeast and salt in room temperature water. Gradually stir in the Tipo 00 flour until a shaggy dough forms.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">02.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Knead & Rise</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Turn out onto a lightly floured surface and knead vigorously for 10-15 minutes until smooth and elastic. Let rise for 2 hours.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">03.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Ferment</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Divide into 4 equal dough balls. Place on a tray, cover tightly, and cold-ferment in refrigerator for 24-48 hours.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">04.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Heat Oven</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Place pizza steel/stone on top rack and preheat oven to maximum temperature (500°F-550°F) for an hour.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">05.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Stretch, Top & Bake</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Gently stretch dough to 10-12 inches. Add crushed San Marzano tomatoes, buffalo mozzarella, fresh basil, and a drizzle of olive oil. Slide onto the preheated stone and bake for 5-7 minutes.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+
+    <!-- Bottom Back Link -->
+    <div class="border-t border-[#D1CEC7] pt-8 text-center">
+      <a href="../index.html" class="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-sans font-bold border border-[#D1CEC7] px-6 py-3 bg-[#1A1A1A] text-[#FDFCF9] hover:bg-[#4A4741] transition-all duration-300">
+        &larr; Return to Index
+      </a>
+    </div>
+
+  </main>
+</body>
+</html>

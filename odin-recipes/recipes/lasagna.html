@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Lasagna - Odin Recipes</title>
+  <!-- Google Fonts for gorgeous typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN for elegant modern visual presentation -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#FDFCF9] text-[#1A1A1A] font-serif min-h-screen py-10">
+  <main class="max-w-3xl mx-auto px-6 space-y-10">
+    
+    <!-- Home Link (Iteration 2 Requirement) -->
+    <div class="border-b border-[#D1CEC7] pb-4 flex justify-between items-baseline">
+      <a href="../index.html" class="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-sans font-bold border border-[#D1CEC7] px-4 py-2 bg-[#F7F5F0] hover:bg-[#1A1A1A] hover:text-[#FDFCF9] hover:border-transparent transition-all duration-300">
+        &larr; Home
+      </a>
+      <span class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D]">Issue No. 01</span>
+    </div>
+
+    <!-- Recipe Title (Iteration 2 Requirement) -->
+    <div class="space-y-2">
+      <span class="block text-xs font-sans font-bold text-[#8C887D] tracking-[0.3em] uppercase">Recipe No. 01</span>
+      <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight text-[#1A1A1A]">
+        Classic Lasagna
+      </h1>
+    </div>
+
+    <!-- Image of Finished Dish (Iteration 3 Requirement) -->
+    <div class="border border-[#D1CEC7] bg-[#E8E6E1] overflow-hidden aspect-[16/9]">
+      <img 
+        src="../../src/assets/images/classic_lasagna_1782546949816.jpg" 
+        alt="Classic Lasagna" 
+        referrerpolicy="no-referrer"
+        class="w-full h-full object-cover grayscale-[10%] contrast-[102%]"
+      >
+    </div>
+
+    <!-- Description (Iteration 3 Requirement) -->
+    <div class="space-y-4">
+      <h2 class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D] border-b border-[#D1CEC7] pb-2">Description</h2>
+      <p class="text-[#4A4741] text-lg font-serif italic leading-relaxed">
+        A comforting, warm, and rich Italian classic. This recipe layers tender pasta sheets, savory sweet Italian sausage and lean beef Bolognese sauce, creamy ricotta herb filling, and mountains of melted bubbling golden-brown mozzarella cheese.
+      </p>
+      <p class="text-[#4A4741] text-lg font-serif italic leading-relaxed">
+        Perfect for Sunday dinners, family gatherings, or meal prepping, this lasagna tastes even better the next day as the delicious Italian flavors continue to meld together perfectly.
+      </p>
+    </div>
+
+    <!-- Two Column layout for Ingredients and Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pt-4">
+      
+      <!-- Ingredients (Iteration 3 Requirement) -->
+      <div class="md:col-span-5 space-y-4">
+        <h2 class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D] border-b border-[#D1CEC7] pb-2">Ingredients</h2>
+        <ul class="space-y-3 text-sm font-sans font-medium text-[#1A1A1A]">
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Lasagna noodles</span><span class="text-[#8C887D]">12 sheets</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Sweet Italian sausage</span><span class="text-[#8C887D]">1 lb</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Lean ground beef</span><span class="text-[#8C887D]">3/4 lb</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Finely chopped onion</span><span class="text-[#8C887D]">1/2 cup</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Garlic, minced</span><span class="text-[#8C887D]">2 cloves</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Crushed tomatoes</span><span class="text-[#8C887D]">28 oz</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Tomato paste</span><span class="text-[#8C887D]">12 oz</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Tomato sauce</span><span class="text-[#8C887D]">13 oz</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>White sugar</span><span class="text-[#8C887D]">2 tbsp</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Dried basil leaves</span><span class="text-[#8C887D]">1 1/2 tsp</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Fennel seeds</span><span class="text-[#8C887D]">1/2 tsp</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Italian seasoning</span><span class="text-[#8C887D]">1 tsp</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Ricotta cheese</span><span class="text-[#8C887D]">16 oz</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Fresh Egg</span><span class="text-[#8C887D]">1</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Mozzarella cheese</span><span class="text-[#8C887D]">3/4 lb</span></li>
+          <li class="pb-1 border-b border-[#D1CEC7]/40 flex justify-between"><span>Grated Parmesan</span><span class="text-[#8C887D]">3/4 cup</span></li>
+        </ul>
+      </div>
+
+      <!-- Steps (Iteration 3 Requirement) -->
+      <div class="md:col-span-7 space-y-4">
+        <h2 class="text-xs uppercase tracking-widest font-sans font-bold text-[#8C887D] border-b border-[#D1CEC7] pb-2">Steps</h2>
+        <ol class="space-y-6">
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">01.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Prepare Sauce</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Cook sausage, beef, onion, and garlic. Stir in crushed tomatoes, paste, sauce, and water. Season with herbs, sugar, and simmer for 1.5 hours.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">02.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Boil Noodles</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Cook lasagna noodles in boiling salted water for 8 to 10 minutes. Drain and rinse with cold water.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">03.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Mix Ricotta</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Combine ricotta cheese with egg, fresh parsley, and a pinch of salt.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">04.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Assemble & Layer</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Spread meat sauce in baking dish. Layer noodles, ricotta mixture, mozzarella, and meat sauce. Repeat and top with extra Parmesan.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-sans font-bold text-sm text-[#8C887D]">05.</span>
+            <div class="space-y-1">
+              <strong class="font-sans font-bold text-sm uppercase text-[#1A1A1A] tracking-wider block">Bake Classic Lasagna</strong>
+              <p class="text-sm font-sans font-medium text-[#4A4741] leading-relaxed">Cover with foil and bake at 375°F for 25 minutes. Remove foil, bake another 25 minutes until golden and bubbling.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+
+    <!-- Bottom Back Link -->
+    <div class="border-t border-[#D1CEC7] pt-8 text-center">
+      <a href="../index.html" class="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-sans font-bold border border-[#D1CEC7] px-6 py-3 bg-[#1A1A1A] text-[#FDFCF9] hover:bg-[#4A4741] transition-all duration-300">
+        &larr; Return to Index
+      </a>
+    </div>
+
+  </main>
+</body>
+</html>

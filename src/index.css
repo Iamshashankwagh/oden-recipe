@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+/* Custom smooth transitions and animations */
+.recipe-card-shadow {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.recipe-active-step {
+  border-color: var(--color-amber-500);
+  background-color: var(--color-amber-50/50);
+}
+
